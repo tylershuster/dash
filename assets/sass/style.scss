@@ -1,0 +1,137 @@
+/******************************************************************
+Theme Name: Dash
+Theme URI: https://github.com/optimizeworldwide/control-panel
+Description: The theme that powers the Optimize Worldwide Control Panel. Built with <a href="https://github.com/eddiemachado/bones/" title="Bones">Bones</a>.
+Author: Tyler Shuster for Optimize Worldwide
+Author URI: http://optimizehere.co
+Version: 2.0
+Tags: fluid-layout, responsive-layout, project-management
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+******************************************************************/
+
+
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	h1 {
+		padding: 0px 0px 0px 1rem;
+		margin: 3rem 0px 0px;
+		float: left;
+		height: 2rem
+	}
+}
+.cards {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: stretch;
+	float: left;
+	width: 100%;
+	height: calc(100vh - 6rem);
+	justify-content: flex-start;
+	margin: 0;
+	align-content: flex-start;
+}
+.card {
+	box-shadow: 1px 1px 1.8px rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	flex-grow: 1;
+	max-width: 25rem;
+	overflow-y: scroll;
+	select,
+	input,
+	textarea,
+	label {
+	    width: 100%;
+	    float: left;
+	}
+}
+
+.dash-data {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0px;
+    label {
+			width: auto;
+			flex-grow: 1;
+		}
+		input,
+		select {
+			width: auto;
+			flex-grow: 2;
+		}
+}
+
+ul.fields,
+ul.array,
+ul.cards,
+#clients ul,
+#sites ul,
+#credentials ul,
+#references ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+li.new-post {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	input {
+		width: auto;
+		float: none;
+	}
+}
+
+li.new-array-item {
+	display: none;
+}
+
+.array {
+	border: 1px solid red;
+	float: left;
+	width: 100%;
+	li {
+		border: 1px solid red;
+		float: left;
+		width: 100%;
+	}
+}
+
+header {
+	position: fixed;
+	width: 100vw;
+	height: 3rem;
+	padding: 0;
+	nav {
+		height: 100%;
+	}
+	ul {
+		padding: 0px;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		margin: 0px;
+		height: 100%;
+		align-items: center;
+	}
+	li {
+		float: left;
+	}
+}
+

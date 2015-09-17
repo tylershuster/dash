@@ -1,0 +1,154 @@
+/******************************************************************
+Theme Name: Dash
+Theme URI: https://github.com/optimizeworldwide/control-panel
+Description: The theme that powers the Optimize Worldwide Control Panel. Built with <a href="https://github.com/eddiemachado/bones/" title="Bones">Bones</a>.
+Author: Tyler Shuster for Optimize Worldwide
+Author URI: http://optimizehere.co
+Version: 2.0
+Tags: fluid-layout, responsive-layout, project-management
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+******************************************************************/
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+body h1 {
+  padding: 0px 0px 0px 1rem;
+  margin: 3rem 0px 0px;
+  float: left;
+  height: 2rem; }
+
+.cards {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  float: left;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
+
+.card {
+  box-shadow: 1px 1px 1.8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 25rem;
+  overflow-y: scroll; }
+  .card select,
+  .card input,
+  .card textarea,
+  .card label {
+    width: 100%;
+    float: left; }
+
+.dash-data {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0px; }
+  .dash-data label {
+    width: auto;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .dash-data input,
+  .dash-data select {
+    width: auto;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
+
+ul.fields,
+ul.array,
+ul.cards,
+#clients ul,
+#sites ul,
+#credentials ul,
+#references ul {
+  padding: 0;
+  list-style-type: none; }
+
+li.new-post {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  li.new-post input {
+    width: auto;
+    float: none; }
+
+li.new-array-item {
+  display: none; }
+
+.array {
+  border: 1px solid red;
+  float: left;
+  width: 100%; }
+  .array li {
+    border: 1px solid red;
+    float: left;
+    width: 100%; }
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 3rem;
+  padding: 0; }
+  header nav {
+    height: 100%; }
+  header ul {
+    padding: 0px;
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    margin: 0px;
+    height: 100%;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  header li {
+    float: left; }
